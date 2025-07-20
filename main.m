@@ -28,11 +28,7 @@ L0=1;L1=(tt^alfa)/(gamma(alfa+1));
 L2=(tt^(2*alfa))/(gamma(2*alfa+1));
              L3=(tt^(3*alfa))/(gamma(3*alfa+1));
              L4=(tt^(4*alfa))/(gamma(4*alfa+1));
-             f0=a;
-             f1=a*(1-a);
-             f2=f1-2*f0*f1;
-             f3=f2-(f1*f1)*gamma(2*alfa+1)*(gamma(alfa+1)).^(-2)-2*f0*f2;
-           f4=f3-2*f0*f3-2*f1*f2*(gamma(3*alfa+1)/(gamma(2*alfa+1)*gamma(alfa+1)));
+             
             ua(j)=L0*f0+L1*f1+L2*f2+L3*f3+f4*L4;
 
 end
